@@ -1,0 +1,10 @@
+04:32:39 **** Incremental Build of configuration Debug for project keypad_test ****
+make -j4 all 
+arm-none-eabi-size  keypad_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19332	     28	   2868	  22228	   56d4	keypad_test.elf
+Finished building: default.size.stdout
+ 
+
+04:32:40 Build Finished. 0 errors, 0 warnings. (took 744ms)
+

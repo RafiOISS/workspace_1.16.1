@@ -1,0 +1,10 @@
+10:47:04 **** Incremental Build of configuration Debug for project temp_keypad ****
+make -j4 all 
+arm-none-eabi-size  temp_keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31924	    116	   3172	  35212	   898c	temp_keypad.elf
+Finished building: default.size.stdout
+ 
+
+10:47:05 Build Finished. 0 errors, 0 warnings. (took 936ms)
+

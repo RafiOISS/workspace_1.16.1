@@ -1,0 +1,24 @@
+10:47:00 **** Incremental Build of configuration Debug for project temp_keypad ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "temp_keypad.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\WORK\NSU\CSE\11th Semester\CSE 331.10\Lab\Keil\STM32CubeIDE\workspace_1.16.1\temp_keypad\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="temp_keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: temp_keypad.elf
+ 
+arm-none-eabi-size  temp_keypad.elf 
+arm-none-eabi-objdump -h -S temp_keypad.elf  > "temp_keypad.list"
+   text	   data	    bss	    dec	    hex	filename
+  31924	    116	   3172	  35212	   898c	temp_keypad.elf
+arm-none-eabi-objcopy  -O ihex temp_keypad.elf  "temp_keypad.hex"
+Finished building: default.size.stdout
+ 
+Finished building: temp_keypad.hex
+Finished building: temp_keypad.list
+ 
+ 
+10:47:04 **** Incremental Build of configuration Debug for project temp_keypad ****
+make -j4 all 
+arm-none-eabi-size  temp_keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31924	    116	   3172	  35212	   898c	temp_keypad.elf
+Finished building: default.size.stdout
+ 
